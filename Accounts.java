@@ -51,9 +51,31 @@ public class Accounts implements Comparable{
               + gender + " " + balance;
 
     }
-
+//compare to method
     @Override
     public int compareTo(Object o) {
-        return 0;
+        return this.owner.compareTo(((Accounts)o).owner);
+    }
+    //adding two methods
+    //deposit method
+    public void deposit(double amount){
+        if (amount>0){
+            setBalance(balance+amount);
+        }
+    }
+
+    //withdraw method
+    public double withdraw(double amount){
+        if (amount>0){
+            if (amount<balance){
+                setBalance(balance-amount);
+            }
+            else {
+                amount=balance;
+                setBalance(0.0);
+            }
+            return amount;
+        }
+        return 0.0;
     }
 }
