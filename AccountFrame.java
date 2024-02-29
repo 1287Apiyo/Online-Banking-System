@@ -1,4 +1,7 @@
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import java.awt.*;
+import java.util.ArrayList;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -18,7 +21,28 @@ public class AccountFrame extends JFrame {
     Accounts acc,x;
     boolean newRec=true;
 
-    //combobox data
-    
+    //combo box data
+    DefaultComboBoxModel<City> citiesCMBMDL;
+    DefaultListModel<Accounts>accountsLSTMDL;
 
+    //Table data
+
+    JTable table;
+    DefaultTableModel tableModel;
+    ArrayList<Transaction> translist =new ArrayList<>();
+
+
+    public AccountFrame() {
+        super("Accounts operations");
+        setLayout(null);
+        setSize(600,400);
+
+
+    }
+    //Main method
+    public static void main(String[] args) {
+        AccountFrame af= new AccountFrame();
+        af.setVisible(true);
+        af.setDefaultCloseOperation(EXIT_ON_CLOSE);
+    }
 }
