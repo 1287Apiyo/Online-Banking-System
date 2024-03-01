@@ -62,6 +62,16 @@ public class AccountFrame extends JFrame {
         citiesCMBMDL.addElement(new City("Mombasa","Coastal"));
         citiesCMBMDL.addElement(new City("Nakuru","RiftValley"));
 
+        //adding data to JCOMBOBOX
+        citiesCMB=new JComboBox<City>(citiesCMBMDL);
+
+        //4-RADIO BUTTONS
+        maleRDB=new JRadioButton("Male",true);
+        femaleRDB=new JRadioButton("Female");
+        genderBTNGRP=new ButtonGroup();
+        genderBTNGRP.add(maleRDB);
+        genderBTNGRP.add(femaleRDB);
+
     }
     //Main method
     public static void main(String[] args) {
