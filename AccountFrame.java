@@ -72,6 +72,14 @@ public class AccountFrame extends JFrame {
         genderBTNGRP.add(maleRDB);
         genderBTNGRP.add(femaleRDB);
 
+        //5.Buttons
+        newBTN=new JButton("New");
+        saveBTN=new JButton("Save");
+        showBTN=new JButton("Show");
+        quitBTN=new JButton("Quit");
+        depositBTN=new JButton("Deposit");
+        withdrawBTN=new JButton("Withdraw");
+
     }
     //Main method
     public static void main(String[] args) {
