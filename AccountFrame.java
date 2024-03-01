@@ -80,6 +80,14 @@ public class AccountFrame extends JFrame {
         depositBTN=new JButton("Deposit");
         withdrawBTN=new JButton("Withdraw");
 
+        //6.Table
+        accountsLSTMDL=new DefaultListModel<>();
+        accountsLST=new JList<>(accountsLSTMDL);
+
+        //7.Panels
+        
+
+
     }
     //Main method
     public static void main(String[] args) {
