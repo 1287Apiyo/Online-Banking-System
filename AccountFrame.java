@@ -36,7 +36,13 @@ public class AccountFrame extends JFrame {
         super("Accounts operations");
         setLayout(null);
         setSize(600,400);
-
+//adding components to the frame
+        accnNoLBL=new JLabel("Account No.");
+        ownerLBL=new JLabel("Owner");
+        balanceLBL=new JLabel("Balance");
+        cityLBL=new JLabel("City");
+        genderLBL=new JLabel("Gender");
+        amountLBL=new JLabel("Amount");
 
     }
     //Main method
