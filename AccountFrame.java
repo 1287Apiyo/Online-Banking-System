@@ -55,6 +55,12 @@ public class AccountFrame extends JFrame {
         amountTXT.setPreferredSize(new Dimension(150,25));
 
         //comboBox
+        citiesCMBMDL=new DefaultComboBoxModel<>();
+        citiesCMBMDL.addElement(null);
+        citiesCMBMDL.addElement(new City("Nairobi","Central"));
+        citiesCMBMDL.addElement(new City("Kisumu","Nyanza"));
+        citiesCMBMDL.addElement(new City("Mombasa","Coastal"));
+        citiesCMBMDL.addElement(new City("Nakuru","RiftValley"));
 
     }
     //Main method
