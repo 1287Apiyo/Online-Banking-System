@@ -36,13 +36,25 @@ public class AccountFrame extends JFrame {
         super("Accounts operations");
         setLayout(null);
         setSize(600,400);
+
+
 //adding components to the frame
+        //1-lables
         accnNoLBL=new JLabel("Account No.");
         ownerLBL=new JLabel("Owner");
         balanceLBL=new JLabel("Balance");
         cityLBL=new JLabel("City");
         genderLBL=new JLabel("Gender");
         amountLBL=new JLabel("Amount");
+
+        //2-text Fields
+        accNoTXT=new JTextField();accNoTXT.setEnabled(false);
+        ownerTXT=new JTextField();
+        balanceTXT=new JTextField();balanceTXT.setEnabled(false);
+        amountTXT=new JTextField();
+        amountTXT.setPreferredSize(new Dimension(150,25));
+
+        //comboBox
 
     }
     //Main method
