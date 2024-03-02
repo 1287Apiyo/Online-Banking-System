@@ -143,6 +143,20 @@ public class AccountFrame extends JFrame {
 
 
 
+        //table creation
+        tableModel=new DefaultTableModel();
+
+        table=new JTable(tableModel);
+        tableModel.addColumn("TrsNo");
+        tableModel.addColumn("TrsDate");
+        tableModel.addColumn("TrsType");
+        tableModel.addColumn("TrsAmount");
+
+        JScrollPane scrollPane=new JScrollPane(table);
+        p5.add(scrollPane);
+
+
+
     }
     //Main method
     public static void main(String[] args) {
