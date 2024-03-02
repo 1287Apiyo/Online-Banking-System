@@ -120,9 +120,19 @@ public class AccountFrame extends JFrame {
         p1.add(femaleRDB);
 
 
+        p2.add(newBTN);
+        p2.add(saveBTN);
+        p2.add(showBTN);
+        p2.add(quitBTN);
+
+
 
 
         //adding panels to frame
+        add(p1);
+        add(p2);
+        add(p5);
+
 
 
     }
