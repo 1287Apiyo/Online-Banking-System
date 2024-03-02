@@ -187,6 +187,19 @@ public class AccountFrame extends JFrame {
                     }else {
                         JOptionPane.showMessageDialog(null,"Fill All Fields Please");
                     }
+                }else {
+                    accountsSet.remove(acc);
+
+                    int a =Integer.parseInt(accNoTXT.getText());
+                    String o=ownerTXT.getText();
+                    City c=(City)citiesCMB.getSelectedItem();
+
+                    char g=maleRDB.isSelected()?'M':'F';
+                    double b=Double.parseDouble(balanceTXT.getText());
+                    acc=new Accounts(a,o,c,g,b);
+                    accountsSet.add(acc);
+                    accountsLSTMDL.setElementAt(acc,accountsLST.getSelectedIndex());
+                    newRec=false;
                 }
             }
         });
