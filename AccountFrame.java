@@ -126,6 +126,12 @@ public class AccountFrame extends JFrame {
         p2.add(quitBTN);
 
 
+        p3.add(amountLBL);
+        p3.add(amountTXT);
+        p3.add(depositBTN);
+        p3.add(withdrawBTN);
+
+        p4.add(accountsLST);
 
 
         //adding panels to frame
