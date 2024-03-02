@@ -1,6 +1,8 @@
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Set;
 import java.util.TreeSet;
@@ -154,6 +156,21 @@ public class AccountFrame extends JFrame {
 
         JScrollPane scrollPane=new JScrollPane(table);
         p5.add(scrollPane);
+
+        //Methods and Functionalities
+        newBTN.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                accNoTXT.setText("");
+                ownerLBL.setText("");
+                citiesCMB.setSelectedIndex(0);
+                maleRDB.setSelected(true);
+                balanceTXT.setText("");
+                amountTXT.setText("");
+                newRec=true;
+            }
+        });
+
 
 
 
