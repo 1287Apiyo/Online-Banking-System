@@ -137,6 +137,8 @@ public class AccountFrame extends JFrame {
         //adding panels to frame
         add(p1);
         add(p2);
+        add(p3);
+        add(p4);
         add(p5);
 
 
