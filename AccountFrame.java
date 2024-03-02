@@ -170,6 +170,26 @@ public class AccountFrame extends JFrame {
                 newRec=true;
             }
         });
+        saveBTN.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (newRec){
+                    if (ownerTXT.getText().length()!=0){
+                        acc=new Accounts(
+                                ownerTXT.getText(),
+                                (City) citiesCMB.getSelectedItem(),
+                                maleRDB.isSelected()?'M':'F'
+                        );
+                        accNoTXT.setText(String.valueOf(acc.accNo));
+                        accountsSet.add(acc);
+                        accountsLSTMDL.addElement(acc);
+                        newRec=false;
+                    }else {
+                        JOptionPane.showMessageDialog(null,"Fill All Fields Please");
+                    }
+                }
+            }
+        });
 
 
 
